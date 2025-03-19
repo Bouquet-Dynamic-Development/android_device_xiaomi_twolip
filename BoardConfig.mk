@@ -22,7 +22,7 @@
 # definition file).
 #
 
-# Inherit from sdm660-common
+# Inherit from bouquet-common (previously used was sdm660-common)
 include device/xiaomi/bouquet-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/twolip
