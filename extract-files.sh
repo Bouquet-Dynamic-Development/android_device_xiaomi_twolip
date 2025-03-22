@@ -13,6 +13,9 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "$LIBCAMERA_SDM660_SHIM"
             done
             ;;
+        vendor/lib64/libgf_ca.so)
+            sed -i 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
+            ;;
     esac
 }
 
@@ -24,8 +27,8 @@ fi
 
 set -e
 
-export DEVICE=twolip
-export DEVICE_COMMON=sdm660-common
+export DEVICE=whyred
+export DEVICE_COMMON=bouquet-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

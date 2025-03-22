@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=twolip
-export DEVICE_COMMON=sdm660-common
+export DEVICE=bouquet
+export DEVICE_COMMON=bouquet-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
