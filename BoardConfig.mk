@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/sdm660_defconfig vendor/xiaomi/tulip.config vendor/xiaomi/whyred.config
+TARGET_KERNEL_CONFIG += vendor/whyred-perf_defconfig
 
 # Creates metadata partition mount point under root for
 # the devices with metadata parition

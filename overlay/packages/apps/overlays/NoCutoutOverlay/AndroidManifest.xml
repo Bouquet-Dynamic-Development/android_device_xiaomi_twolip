@@ -20,6 +20,8 @@
         android:versionName="1.0">
     <overlay android:targetPackage="android"
             android:category="com.android.internal.display_cutout_emulation"
+            android:requiredSystemPropertyName="ro.boot.hwdevice"
+            android:requiredSystemPropertyValue="tulip"
             android:priority="0"/>
 
     <application android:label="@string/display_cutout_emulation_overlay" android:hasCode="false"/>
